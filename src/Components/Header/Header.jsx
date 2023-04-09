@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './Header.css'
+import Blog from '../Blog/Blog';
 
 const Header = () => {
     const location = useLocation();
@@ -21,7 +22,7 @@ const Header = () => {
                     <div>
                         <Link to='/statistics'>Statistics</Link>
                         <Link to='/appliedJobs'>Applied Jobs</Link>
-                        <Link to='/blog'>Blog</Link>
+                        {/* <Link to='/blog'></Link> */}
                     </div>
                     <button>Start Applying</button>
                 </div>
@@ -43,6 +44,7 @@ const Header = () => {
             </div>
             <img src="/src/assets/images/All Images/P3OLGJ1 copy 1.png" alt="" />
         </div>
+        <Link to='/blog'></Link>
        </div>
     );
 };

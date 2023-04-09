@@ -7,8 +7,9 @@ import {
 } from "react-router-dom";
 import Statistics from './Components/Statistics/Statistics';
 import AppliedJobs from './Components/AppliedJobs/AppliedJobs';
-import Blog from './Components/Blog/Blog';
 import Home from './Components/Layout/home';
+import Blog from './Components/Blog/Blog';
+// import ErrorElement from './Components/ErrorElement/ErrorElement';
 
 
 
@@ -28,7 +29,12 @@ const router = createBrowserRouter([
       {
         path: 'blog',
         element: <Blog></Blog>
-      }
+      },
+      
+      // {
+      //   path:'*',
+      //   element:<ErrorElement></ErrorElement>
+      // }
     ]
   }
 ])

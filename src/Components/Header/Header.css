@@ -80,3 +80,49 @@
     color: #6173ec;
     transition: 0.5s;
 }
+
+.nav-tag {
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: -80px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(247, 247, 247);
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.header img{
+    width: 600px;
+    height: 500px;
+}
+.header-text{
+    width: 30%;
+    margin-left: 5%;
+}
+.header-text h1 {
+    font-weight: 800;
+    font-size: 50px;
+}
+
+.header-text span {
+    color: #7E90FE;
+}
+
+.header-text button {
+    width: 172px;
+    height: 65px;
+    left: 300px;
+    top: 698px;
+    background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
+    border-radius: 8px;
+}

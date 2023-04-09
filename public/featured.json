@@ -20,7 +20,7 @@
     },
         "teslaJob": {
         "id": "TESLA456",
-        "companyLogo": "https://www.tesla.com/sites/default/files/images/tesla_logo_social.jpg",
+        "companyLogo": "/src/assets/Images/All Images/tesla-9 1.png",
         "jobTitle": "Electrical Engineer",
         "companyName": "Tesla",
         "remoteOrOnsite": "Onsite",

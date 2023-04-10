@@ -14,7 +14,7 @@ const FeaturedJobs = () => {
     const handleViewDetails = (job) => {
         addToDb(job.id)
     }
-    console.log(jobs)
+    
     return (
         <div className='featured'>
             <h1>Featured Jobs</h1>

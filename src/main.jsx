@@ -7,17 +7,21 @@ import {
 } from "react-router-dom";
 import Statistics from './Components/Statistics/Statistics';
 import AppliedJobs from './Components/AppliedJobs/AppliedJobs';
-import Home from './Components/Layout/home';
 import Blog from './Components/Blog/Blog';
-// import ErrorElement from './Components/ErrorElement/ErrorElement';
+import Main from './Components/Layout/Main';
 
+import Home from './Components/Home/Home';
 
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Home></Home>,
+    element: <Main></Main>,
     children: [
+      {
+        path : '/',
+        element: <Home></Home>
+      },
       {
         path: 'statistics',
         element: <Statistics></Statistics>
@@ -30,11 +34,7 @@ const router = createBrowserRouter([
         path: 'blog',
         element: <Blog></Blog>
       },
-      
-      // {
-      //   path:'*',
-      //   element:<ErrorElement></ErrorElement>
-      // }
+    
     ]
   }
 ])

@@ -9,8 +9,10 @@ import Statistics from './Components/Statistics/Statistics';
 import AppliedJobs from './Components/AppliedJobs/AppliedJobs';
 import Blog from './Components/Blog/Blog';
 import Main from './Components/Layout/Main';
-
 import Home from './Components/Home/Home';
+import JobDetails from './Components/JobDetails/JobDetails';
+import { jobLoader } from './utilities/fakedb';
+
 
 
 const router = createBrowserRouter([
@@ -19,7 +21,7 @@ const router = createBrowserRouter([
     element: <Main></Main>,
     children: [
       {
-        path : '/',
+        path: '/',
         element: <Home></Home>
       },
       {
@@ -34,7 +36,11 @@ const router = createBrowserRouter([
         path: 'blog',
         element: <Blog></Blog>
       },
-    
+      {
+        path: 'jobDetails',
+        element: <JobDetails></JobDetails>,
+        loader: jobLoader
+      }
     ]
   }
 ])

@@ -3,7 +3,6 @@ import './Blog.css'
 const Blog = () => {
     return (
         <div className="blog-container">
-        <h1 className='section-title'>Blog</h1>
         {/* Question : 1 section */}
         <div>
             <p>

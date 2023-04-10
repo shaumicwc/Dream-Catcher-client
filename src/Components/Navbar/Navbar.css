@@ -67,7 +67,9 @@ nav{
     font-size: 30px;
 }
 
-@media (max-width: 568px) {
+/* mobile responsive */
+
+@media (max-width: 576px) {
     .large-device-nav{
         display: none;
     }

@@ -11,3 +11,15 @@
     display: flex;
     
 }
+/* -------------mobile responsive---------- */
+@media (max-width: 576px) {
+    .job-category h1{
+        font-size: 30px;
+    }
+    .job-category div{
+        flex-direction: column;    
+    }
+    .job-category p{
+        font-size: 15px;
+    }
+}

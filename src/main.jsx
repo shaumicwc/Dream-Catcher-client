@@ -33,16 +33,16 @@ const router = createBrowserRouter([
       {
         path: 'appliedJobs',
         element: <AppliedJobs></AppliedJobs>,
-        loader:jobCartLoader
+        loader: jobCartLoader
       },
       {
         path: 'blog',
         element: <Blog></Blog>
       },
       {
-        path: 'jobDetails',
+        path: 'jobDetails/:jId',
         element: <JobDetails></JobDetails>,
-        loader: jobLoader
+        loader: ({params}) => jobLoader(params.jId)
       },
       {
         path: '*',
